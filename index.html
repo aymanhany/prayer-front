@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+  <!-- fontawesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <title>Prayer</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="./Assets/logo-2@2x.png" alt="" width="50" height="50">
+            <span>الصلاة الآن</span>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse mr-auto" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link " aria-current="page" href="#"> مواقيت الصلاة </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المميزات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">عن التطبيق </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> المقالات</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                المزيد
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">حول العالم الاسالامي </a></li>
+                <li><a class="dropdown-item" href="#">الخلفيات و الصور</a></li>
+                <li><a class="dropdown-item" href="#">المساجد </a></li>
+                <li><a class="dropdown-item" href="#">القرءان الكريم </a></li>
+                <li><a class="dropdown-item" href="#">اذكار المسلم </a></li>
+                <li><a class="dropdown-item" href="#"> طريقة حساب المواقيت</a></li>
+                <li><a class="dropdown-item" href="#"> كيفية الصلاة</a></li>
+                <li><a class="dropdown-item" href="#"> كيفية الوضوء</a></li>
+                <li><a class="dropdown-item" href="#">الاسأله الشائعة</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="download-btn">
+                تنزيل التطبيق
+                <span><img src="./Assets/Icon feather-download.svg" alt=""></span>
+              </button>
+            </li>
+            <li>
+              <div class="language">
+                <img src="./Assets/Icon metro-earth-1.svg" alt="">
+
+                <select name="cars" id="cars">
+                  <option value="Arabic" selected>
+                    عربي
+                  </option>
+                  <option value="English">English</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+
+        </div> <!-- navbar-collapse.// -->
+
+      </div> <!-- container-fluid.// -->
+    </nav>
+  </header>
+
+
+  <!-- home  -->
+  <section class="home">
+    <div class="container">
+      <div class="row  title-row">
+        <div class="titles col-md-6 col-sm-12">
+          <div>
+            <h1 class="main-title GE SS Two">
+              الصلاة الآن
+            </h1>
+            <p class="sub-title">الرفيق الآول لكل مسلم</p>
+          </div>
+          <div>
+            <p> باقي علي صلاة</p>
+            <b class="prayer-name GE SS Two" id="current-prayer">المغرب</b>
+            <p class="prayer-time">
+              <span id="secondsSecond">2</span> <span id="secondsFirst">3</span>
+              :
+              <span id="minutesSecond">7</span> <span id="minutesFirst">5</span>
+              :
+              <span id="hoursSecond">0</span> <span id="hoursFirst">0</span>
+            </p>
+          </div>
+
+          <a href="#"> <button class="download">تنزيل التطبيق</button></a>
+          <!-- Button trigger modal -->
+          <button type="button" class="watsh" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16.001" viewBox="0 0 14 16.001">
+              <defs>
+                <style>
+                  .a {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <path class="a"
+                d="M13.263,6.711l-11-6.5A1.492,1.492,0,0,0,0,1.5v13a1.5,1.5,0,0,0,2.263,1.291l11-6.5a1.5,1.5,0,0,0,0-2.581Z"
+                transform="translate(0 -0.002)" />
+            </svg>
+          </button>
+          <!-- <span style="color: #297770;"> مشاهدة </span> -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-transparent show-modal" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <span class="show-modal">
+              مشاهدة
+            </span>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe class="w-100" height="356px" src="https://www.youtube.com/embed/STNm9HBnaW0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image col-md-6 col-sm-12">
+          <img src="./Assets/Mobile.png" alt="" width="497px" height="370px">
+        </div>
+      </div>
+
+      <div class="row w-100 mx-auto">
+        <div class="col-md-12  search-bar">
+          <form class="form ">
+            <i class="fa fa-search"></i>
+            <input id="searchBox" type="text" class="form-control form-input" autocomplete="on"
+              placeholder="ابحث بالمدينة">
+            <span class="left-pan">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <ul class="suggestions" dir="ltr">
+
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="container date">
+        <div class="d-flex justify-content-between">
+          <p class="text-center">
+            <span id="city" class="text-center"></span>
+            <!-- <div id="demo"></div> -->
+            <!-- <span>
+              مصر
+            </span> -->
+          </p>
+          <p class="text-center">
+            <span id="today"></span>
+            <!-- <span> , شوال 1443</span> -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grediant">
+      <div class="container d-flex justify-content-between grediant-media-query">
+        <div class="praye-time-show">
+          <p class="title">الفجر</p>
+          <p class="praye-time ge-ss-font "> ۲۰ : ۰٤ </p>
+        </div>
+        <div class="praye-time-show ">
+          <p class="title">الشروق</p>
+          <p class="praye-time ge-ss-font "> ۲٠ : ۰٤ </p>
+        </div>
+        <div class="praye-time-show ">
+          <p class="title">الظهر</p>
+          <p class="praye-time ge-ss-font "> ٤۲ : ۱۱ </p>
+        </div>
+        <div class="praye-time-show ">
+          <p class="title">العصر</p>
+          <p class="praye-time ge-ss-font "> ۳٦ : ۰۳ </p>
+        </div>
+        <div class="active praye-time-show ">
+          <p class="title">المغرب</p>
+          <p class="praye-time ge-ss-font "> ۳۰ : ۰٥ </p>
+        </div>
+        <div class="praye-time-show">
+          <p class="title">العشاء</p>
+          <p class="praye-time ge-ss-font "> ٥۰ : ۰٦ </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ------------ Calender ------------ -->
+
+
+  <section class="calender-section">
+    <div class="container title">
+      <p>
+        تعرف علي مواعيد الصلاة خلال الأسبوع
+      </p>
+    </div>
+    <div class="container bg-img">
+      <div class="calender">
+        <img src="./Assets/ss.svg" class="img" alt="">
+        <div class="">
+          <div class="table-div">
+            <table class="table" id="prayers">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">الفجر</th>
+                  <th scope="col">الشروق</th>
+                  <th scope="col">الظهر</th>
+                  <th scope="col">العصر</th>
+                  <th scope="col">المغرب</th>
+                  <th scope="col">العشاء</th>
+                </tr>
+              </thead>
+              <tbody id="tb-body">
+                <!-- <tr>
+                  <th scope="row">الفجر</th>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">الظهر</th>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                </tr>
+                <tr>
+                  <th scope="row">العصر</th>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                </tr>
+                <tr>
+                  <th scope="row">المغرب</th>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                </tr>
+                <tr>
+                  <th scope="row">العشاء</th>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                  <td> ۰٣:٤٥ </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+          <div class="kepla">
+            <p class="kepla-info">
+              تعرف أيضا علي اتجاه القبلة في مدينتك
+
+              <span class="kepla-dir">
+                <span class="degree">&deg; </span> ١٣٥
+                <span class="N-dir">من الشمال </span>
+              </span>
+              <!-- <span class="arrow">
+  <img src="./Assets/arrow.png" alt="">
+</span> -->
+          </div>
+          <div class="compass">
+            <img src="./Assets/Group 168@2x.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------ download section ------------------ -->
+  <section class="download-section">
+    <div class="">
+      <!-- <div class="title">
+    <p>قم يتنزيل التطبيق الآن</p>
+    <p class="sub-title">
+      سارع بتحميل اقوي تطبيق اسلامي شامل حاصل علي اكثر من 10 مليون تحميل علي المتاجر المختلفة
+    </p>
+  </div> -->
+      <img src="./Assets/Group 186.png" alt="">
+    </div>
+  </section>
+
+  <!-- ---------- Features of app------------- -->
+  <section class="features">
+    <div class="container">
+      <p class="title">
+        إليك بعض من مميزات التطبيق
+      </p>
+      <div class="row features-row justify-content-between">
+        <div class="col-md-5 col-sm-12 featur-item ">
+          <div class="bg-img">
+            <img src="./Assets/1570685441_228862@2x.png" alt="">
+          </div>
+          <div class="info-body">
+            <div class="phone-img">
+              <img src="./Assets/Group 407.png" alt="">
+            </div>
+            <div class="info d-flex">
+              <div class="svg">
+                <img src="./Assets/hand on 2.png" alt="">
+              </div>
+            </div>
+            <div class="inner-text">
+              <div class="info-title">
+                اذكار المسلم
+              </div>
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 featur-item ">
+          <div class="bg-img">
+            <img src="./Assets/thumbs_b_c_aeb93fc97b4e21bd15e3ee6c6c6d59ed.png" alt="">
+          </div>
+          <div class="info-body">
+            <div class="phone-img">
+              <img src="./Assets/Group 406.png" alt="">
+            </div>
+            <div class="info d-flex">
+              <div class="svg">
+                <img src="./Assets/carpet.svg" alt="">
+              </div>
+            </div>
+            <div class="inner-text">
+              <div class="info-title">
+                اذكار المسلم
+              </div>
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-md-5 col-sm-12 featur-item ">
+          <div class="bg-img">
+            <img src="./Assets/114606.png" alt="">
+          </div>
+          <div class="info-body">
+            <div class="phone-img">
+              <img src="./Assets/Group 408.png" alt="">
+            </div>
+            <div class="info d-flex">
+              <div class="svg lamp">
+                <img src="./Assets/lamp.svg" alt="">
+              </div>
+            </div>
+            <div class="inner-text">
+              <div class="info-title">
+                اذكار المسلم
+              </div>
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 featur-item ">
+          <div class="bg-img">
+            <img src="./Assets/2osqs55fy48wkwws4o.png" alt="">
+          </div>
+          <div class="info-body">
+            <div class="phone-img">
+              <img src="./Assets/Group 409.png" alt="">
+            </div>
+            <div class="info d-flex">
+              <div class="svg">
+                <img src="./Assets/azkar.png" alt="">
+              </div>
+            </div>
+            <div class="inner-text">
+              <div class="info-title">
+                اذكار المسلم
+              </div>
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------- Almazeed section--------- -->
+  <section class="almazeed-section">
+    <div class="almazeed-title">
+
+
+
+      <span class="icon">
+        <i class="fas fa-arrow-left"></i>
+      </span>
+      <a href="#">
+        تعرف علي المزيد من المميزات من هنا
+      </a>
+      <span class="icon">
+        <i class="fas fa-arrow-right"></i>
+      </span>
+
+
+
+    </div>
+    <div class="almazeed">
+      <div class="container map-content">
+        <div class="sub-title">
+          شكراً لك على الدعم
+        </div>
+        <p class="title-info">
+          لم يكن تطبيق براير ناو لينجح بدونك. إذا أعجبك التطبيق والتقدم الذي نحرزه، فرجاءً قم بدعمنا من خلال كتابة
+          رأيك
+          على متجر App Store.
+        </p>
+        <div class="img">
+          <img src="./Assets/Group 219.svg" alt="">
+        </div>
+        <div class="download">
+          <div class="download-nom" dir="ltr">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>,</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+          <div class="down-info">
+            تم تنزيل تطبيق براير ناو حتى الآن
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------------Know more section ---------------- -->
+  <section class="know-more-section">
+    <div class="container">
+      <div class="float-img">
+        <img src="./Assets/Layer 2-1.svg" alt="">
+      </div>
+      <div class="row know-more-row">
+        <div class="col-md-6 col-sm-12">
+          <p class="heading">تعرف أكثر علي التطبيق الحاصل علي 10+ مليون تحميل</p>
+          <p class="info">
+            برایر ناو تطبیق اسلامي متكامل به كافة الاحتیاجات الیومیة لكل مسلم مثل المؤذن و مواقيت الصلاه و قراءه
+            القرأن
+            و تحديد القبله و الاذكارو تنزيل و سماع القرأن مرتل و موجود
+          </p>
+          <div class="down-btn">
+            <button> تنزيل التطبيق </button>
+            <span class="icon"><i class="fas fa-play-circle"></i></span>
+            <span class="text">مشاهدة</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <iframe class="w-100" height="356px" src="https://www.youtube.com/embed/STNm9HBnaW0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ------------- know pryer ----------- -->
+  <section class="know-prayer">
+    <div class="container">
+      <div class="title">
+        تعرف علي براير ناو
+      </div>
+      <div class="card">
+        <div class="azkar">
+          <img src="./Assets/Layer-azkar.svg" alt="">
+        </div>
+        <div class="logo">
+          <img src="./Assets/logo.png" alt="">
+        </div>
+        <p class="info">
+          برایر ناو تطبیق اسلامي متكامل به كافة الاحتیاجات الیومیة لكل مسلم مثل المؤذن و مواقيت الصلاه و قراءه القرأن
+          و
+          تحديد القبله و الاذكارو تنزيل و سماع القرأن مرتل و موجود البرنامج يأتى بشكل رائع من حیث التصمیم یجعل برایر
+          ناو
+          موسوعة شاملة لكافة احتیاجات المسلم الیومیة مع فتح باب سماع المفترحات لاضافه مميزات جديده أول بأول .
+        </p>
+        <p class="social-title">
+          تابعنا على
+        </p>
+        <div class="social-icon">
+          <a href="#"><img src="./Assets/096-twitter.svg" alt=""></a>
+          <a href="#"><img src="./Assets/066-pinterest.svg" alt=""></a>
+          <a href="#"><img src="./Assets/044-instagram.svg" alt=""></a>
+          <a href="#"><img src="./Assets/116-youtube.svg" alt=""></a>
+          <a href="#"><img src="./Assets/024-facebook.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ----------- See other people's opinions  ---------- -->
+  <section class="opinions container">
+    <div class="title">
+      <p>
+        <span>
+          شاهد أراء الأخرين في التطبيق
+        </span>
+        <img src="./Assets/Page-1.svg" alt="">
+      </p>
+    </div>
+    <div class="row stars-row justify-content-between">
+      <div class="reviews col">
+        <p>
+          <span class="google">google play</span>
+          <span class="icon"><i class="fab fa-google-play"></i></span>
+          <span class="g-reviews">التقييمات</span>
+        </p>
+        <p class="stars">
+          <span class="stars-nom">4.8</span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="review-nom">562,985
+            <span>تقييم</span>
+          </span>
+        </p>
+      </div>
+      <div class="btn col">
+        <button>أضف تعليق</button>
+      </div>
+    </div>
+    <div class="row cards-row justify-content-between">
+      <div class="row-item col-md-4 col-sm-12">
+        <div class="row-info">
+          <p>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+          </p>
+          <p class="info">
+            البرنامج اكثر من رائع وفق الله السادة مطورى البرنامج وانصح الجميع بتحميل هذه النسخة الرائعة بوجود مزايا
+            كثيرة
+            مفيدة للجميع ان شاء الله
+          </p>
+          <p class="small">
+            تم نشره على
+          </p>
+          <p class="google-link">
+            <a href="#">Google Play Store</a>
+          </p>
+        </div>
+        <div class="row">
+          <div class="customer-item d-flex">
+            <div class="image">
+              <img src="./Assets/smileMan.png" alt="">
+            </div>
+            <div class="name-info">
+              <p class="name">Hani Adel</p>
+              <p class="date">أغسطس 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-item col-md-4 col-sm-12">
+        <div class="row-info">
+          <p>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+          </p>
+          <p class="info">
+            البرنامج اكثر من رائع وفق الله السادة مطورى البرنامج وانصح الجميع بتحميل هذه النسخة الرائعة بوجود مزايا
+            كثيرة
+            مفيدة للجميع ان شاء الله
+          </p>
+          <p class="small">
+            تم نشره على
+          </p>
+          <p class="google-link">
+            <a href="#">Google Play Store</a>
+          </p>
+        </div>
+        <div class="row">
+          <div class="customer-item d-flex">
+            <div class="image">
+              <img src="./Assets/smileMan.png" alt="">
+            </div>
+            <div class="name-info">
+              <p class="name">Hani Adel</p>
+              <p class="date">أغسطس 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-item col-md-4 col-sm-12">
+        <div class="row-info">
+          <p>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+            <span class="star"><i class="fas fa-star"></i></span>
+          </p>
+          <p class="info">
+            البرنامج اكثر من رائع وفق الله السادة مطورى البرنامج وانصح الجميع بتحميل هذه النسخة الرائعة بوجود مزايا
+            كثيرة
+            مفيدة للجميع ان شاء الله
+          </p>
+          <p class="small">
+            تم نشره على
+          </p>
+          <p class="google-link">
+            <a href="#">Google Play Store</a>
+          </p>
+        </div>
+        <div class="row">
+          <div class="customer-item d-flex">
+            <div class="image">
+              <img src="./Assets/smileMan.png" alt="">
+            </div>
+            <div class="name-info">
+              <p class="name">Hani Adel</p>
+              <p class="date">أغسطس 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="almazeed-title down-title">
+      <span class="icon">
+        <i class="fas fa-arrow-left"></i>
+      </span>
+      <a href="#">
+        شاهد المزيد
+      </a>
+      <span class="icon">
+        <i class="fas fa-arrow-right"></i>
+      </span>
+    </div>
+  </section>
+
+  <!-- --------------- see more ---------------- -->
+  <section class="see-more-section">
+    <div class="container">
+
+      <p class="sub-title">الأسئلة المتكررة</p>
+      <div class="row justify-content-between accordion-row">
+        <div class="col-md-5 col-lg-8 col-sm-12 accordion-card">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button active" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  عنوان السؤال يكتب هنا بحد أقص سطرين ؟
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                  يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                  التطبيق.
+                  إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  عنوان السؤال يكتب هنا بحد أقص سطرين ؟
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                  يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                  التطبيق.
+                  إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  عنوان السؤال يكتب هنا بحد أقص سطرين ؟
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                  يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                  التطبيق.
+                  إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  عنوان السؤال يكتب هنا بحد أقص سطرين ؟
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                  يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                  التطبيق.
+                  إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4 col-sm-12">
+          <div class="image">
+            <img src="./Assets/Asset 1.png" alt="">
+          </div>
+          <div class="btn">
+            <button>عرض جميع الاسئلة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------- main footer -------- -->
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <img src="./Assets/logo-1.png" alt="">
+        <p>الصلاة الآن</p>
+      </div>
+      <div class="social container">
+        <span class="social-icon">
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </span>
+        <span class="social-icon">
+          <a href="#"> <i class="fab fa-instagram"></i></a>
+        </span>
+        <span class="social-icon">
+          <a href="#"> <i class="fab fa-youtube"></i></a>
+        </span>
+        <span class="social-icon">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </span>
+        <span class="social-icon">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </span>
+      </div>
+      <div class="row info">
+        <div class="col-4 col-md-2">
+          <p class="title">
+            معلومات عنا
+          </p>
+          <ul>
+            <li><a href="#">خلفيات إسلامية</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li><a href="#">المقترحات / الشكاوى</a></li>
+          </ul>
+        </div>
+        <div class="col-4 col-md-2">
+          <p class="title">
+            إعلن معانا
+          </p>
+        </div>
+        <div class="col-4 col-md-2">
+          <p class="title">
+            مميزات التطبيق
+          </p>
+          <ul>
+            <li><a href="#"> المقالات </a></li>
+            <li><a href="#">إبلاغ عن إعلان</a></li>
+            <li><a href="#">المساجد</a></li>
+          </ul>
+        </div>
+        <div class="col-4 col-md-2">
+          <p class="title">
+            المساجد
+          </p>
+        </div>
+        <div class="col-4 col-md-2">
+          <p class="title">
+            مساعدة
+          </p>
+          <ul>
+            <li><a href="#">خلفيات إسلامية</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li><a href="#">المقترحات / الشكاوى</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-2">
+          <p class="title">
+          </p>
+          <div class="language">
+            <img src="./Assets/Icon metro-earth.svg" alt="">
+
+            <select name="cars" id="cars">
+              <option value="Arabic" selected>
+                عربي
+              </option>
+              <option value="English">English</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+  <section class="mini-footer">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <p>Prayer Now 2014-2021</p>
+        <p>Developed by Approcks</p>
+      </div>
+    </div>
+  </section>
+  <!-- font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- JS file -->
+  <script src="javascript/responsive.js"></script>
+</body>
+
+</html>

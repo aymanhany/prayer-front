@@ -1,0 +1,1593 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Janna LT";
+  src: url(../Assets/fonts/JannaLTBold/JannaLTBold.ttf);
+  font-style: Bold;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Janna LT";
+  src: url(../Assets/fonts/JannaLTRegular/JannaLTRegular.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "GE SS Two";
+  src: url(../Assets/fonts/ArbFONTS-ge-ss-tv-bold.otf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* *********************** Global style ********************* */
+
+body {
+  font-family: "Janna LT", Helvetica !important;
+}
+
+.cairo-font {
+  font-family: "Cairo", sans-serif;
+}
+
+.ge-ss-font {
+  font-family: "GE SS Two", Helvetica;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.navbar ul li a {
+  color: #297770;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar li.active::after {
+  display: block;
+  content: "";
+  margin-top: 0.5rem;
+  margin: auto;
+  height: 2px;
+  width: 42px;
+  background-color: #dfb82b;
+}
+
+.nav-link:focus, .navbar .nav-item.active .nav-link {
+  color: #dfb82b !important;
+}
+
+.navbar select {
+  border: none;
+  padding: 0;
+  margin-top: 0;
+  outline: none;
+}
+
+.navbar select ul li button {
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+.navbar span {
+  color: #483318;
+  font-size: 20px;
+}
+
+.navbar ul .download-btn {
+  border: none;
+  background-color: #297770;
+  font-size: 14px;
+  color: #ffffff;
+  padding-inline: 1rem;
+  border-radius: 5px;
+}
+
+.navbar ul .download-btn span {
+  padding-right: 1.2rem;
+}
+
+.navbar ul li ul li a {
+  font-size: 13px;
+  border-bottom: 1px solid #297770;
+  margin-right: 1%;
+  width: 90%;
+}
+
+.navbar ul li ul li:last-child a {
+  border: none;
+}
+
+.navbar ul li {
+  margin: 0 0.5rem;
+}
+
+.navbar .nav-item .nav-link {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-left: 1.5rem;
+}
+
+.navbar .nav-item:hover .nav-link {
+  color: #dfb82b;
+}
+
+/* ******************* Home *****************/
+
+.home {
+  padding-top: 3%;
+  background-image: url(../Assets/back\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title-row {
+  margin-bottom: 2%;
+}
+
+.home .main-title {
+  font-size: 2.8rem;
+  color: #483318;
+}
+
+.home .sub-title {
+  font-size: 2.1rem;
+  color: #483318;
+  margin-bottom: 8%;
+}
+
+.home .search-bar {
+  padding: 0;
+  box-shadow: 0px 0px 12px #2ca7ab3f;
+  border-radius: 1rem;
+}
+
+.suggestions {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 99%;
+}
+
+.suggestions li {
+  background: #ffffff;
+  list-style: none;
+  border-bottom: 1px solid #D8D8D8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 10px;
+  transition: background 0.2s;
+  text-transform: capitalize;
+  direction: rtl;
+  color: #c4c4c4;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.suggestions li span:first-of-type {
+  margin-left: 10px;
+}
+
+.suggestions .name {
+  padding-right: .5rem;
+  border-right: 1px solid #D8D8D8;
+}
+
+.home .form-control {
+  border-radius: 1rem;
+}
+
+.home .search-bar .form {
+  border-radius: 10px;
+}
+
+.home .titles p:nth-child(3) {
+  font-size: 1.3rem;
+  color: #483318;
+}
+
+.home .prayer-name {
+  font-size: 1.3rem;
+}
+
+.home .prayer-time {
+  color: #297770;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.home .prayer-time span {
+  display: inline-block;
+  width: 21px;
+  height: 38px;
+  border: 1px solid gray;
+  background-color: #eee;
+  padding: 0.3%;
+  text-align: center;
+}
+
+.home a button {
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 0.9% 2%;
+  background-color: #297770;
+}
+
+.home .watsh {
+  display: inline-block;
+  margin-right: 5%;
+  margin-left: 0.5%;
+  border: none;
+  border-radius: 50%;
+  background-color: #297770;
+  height: 34px;
+  width: 35px;
+  text-align: center;
+  padding: 0;
+}
+
+.show-modal {
+  padding: 0 !important;
+  font-weight: bold;
+  color: #297770;
+}
+
+.modal-content .modal-content {
+  background-color: transparent;
+}
+
+.modal-content .modal-body img {
+  width: 100%;
+}
+
+.modal-header .btn-close {
+  background-color: #D1D1D1;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.modal-body {
+  border-radius: 1.3rem;
+  background-color: #FFFF;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.home .image img {
+  width: 85%;
+  height: 85%;
+}
+
+.home .watsh svg {
+  padding: 0 5%;
+  padding-bottom: 10%;
+}
+
+.home .date {
+  margin-top: 3%;
+}
+
+.home .date p {
+  font-weight: bolder;
+  font-size: 15px;
+  color: #483318;
+  border: 2px solid #483318;
+  border-radius: 5px;
+  width: 200px;
+  padding: 0.4% 1%;
+}
+
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.form span.left-pan {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+  padding-left: 1%;
+  width: 25px;
+  color: #297770;
+}
+
+.left-pan i {
+  padding-left: 1%;
+}
+
+.form-input {
+  height: 50px;
+  text-indent: 33px;
+  border-radius: 10px;
+}
+
+.form-control {
+  font-size: 14px;
+  padding: 0.375rem 1.2rem !important;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.grediant {
+  background-image: linear-gradient( to top, #297771ab -40px, rgba(255, 255, 255, 0) 100%);
+}
+
+.grediant .praye-time-show p {
+  margin: 0;
+}
+
+.grediant .praye-time-show {
+  vertical-align: middle;
+  position: relative;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.3% 3%;
+  margin: 2% 0;
+  border: 2px solid #dfb82b00;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.grediant .praye-time-show:hover, .grediant .praye-time-show.active {
+  border: 2px solid #dfb82b;
+}
+
+.grediant.grediant-media-query {
+  justify-content: space-between;
+}
+
+.grediant .praye-time-show .title {
+  color: #297770;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.grediant .active::after {
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  content: "";
+  display: inline-block;
+  border: 4px solid #ff0000;
+  border-radius: 50%;
+}
+
+.grediant .praye-time {
+  font-weight: 400;
+  color: #483318;
+  font-size: 28px;
+}
+
+/* ******** calender styling *********** */
+
+.calender-section {
+  background-image: url(../Assets/back\ 1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 10%;
+}
+
+.calender-section .title {
+  font-size: 24px;
+  color: #483318;
+  text-align: center;
+  padding-top: 2%;
+  font-weight: bold;
+  padding-bottom: 1%;
+}
+
+.calender-section .bg-img {
+  background-image: url(../Assets/4010.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.calender-section .calender {
+  margin-right: 10%;
+  padding-top: 1%;
+}
+
+.calender-section .calender .img {
+  width: 100px;
+  height: 125px;
+}
+
+.table-div {
+  margin-top: -6rem;
+  padding: 2rem 7rem;
+  text-align: center;
+  overflow-x: hidden;
+  margin-bottom: 30px;
+}
+
+.table-div table {
+  overflow-x: auto;
+  display: block;
+}
+
+.table-div table thead th {
+  font-size: 25px;
+  border: none;
+  padding-inline: 15px;
+  font-weight: normal;
+}
+
+.table-div tbody th.active {
+  font-weight: bold !important;
+  position: relative;
+}
+
+.table-div tbody th.active::after {
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  content: "";
+  display: inline-block;
+  border: 4px solid #ff0000 !important;
+  border-radius: 50%;
+}
+
+.table-div thead th, td {
+  color: #4d8782;
+}
+
+.table-div table td {
+  font-size: 24px;
+  border: none;
+  padding: .5rem 1.5rem;
+}
+
+.table-div tbody th {
+  font-size: 25px;
+  border: none;
+  color: #483318;
+}
+
+.calender-section .kepla {
+  color: #483318;
+  font-size: 21px;
+}
+
+.kepla-info {
+  padding-bottom: 2rem;
+  width: 35%;
+  font-size: 21px;
+  margin-top: auto;
+  margin-right: 15%;
+  position: relative;
+}
+
+.kepla-dir {
+  display: inline-block;
+  font-size: 23px;
+  font-weight: bolder;
+  padding-right: 88%;
+  width: 107%;
+}
+
+.kepla .arrow {
+  position: absolute;
+}
+
+.N-dir {
+  font-size: .9rem;
+}
+
+.compass img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 3%;
+  left: 15%;
+}
+
+/* ******** download-section styling *********** */
+
+.download-section {
+  background-image: url(../Assets/muslim-lady-holds-smartphone-shows-blank-screen-insert-text-your-information-wears-pink-hijab-white-shirt.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.download-section img {
+  width: 100%;
+}
+
+/* ******** features-estion styling *********** */
+
+.features {
+  padding-bottom: 5%;
+}
+
+.features .title {
+  font-size: 24px;
+  color: #483318;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 13%;
+}
+
+.features-row {
+  padding-bottom: 15%;
+}
+
+.features .info {
+  margin-right: auto;
+  float: left;
+  margin-top: -55px;
+}
+
+.info .svg {
+  width: 72px;
+  height: 72px;
+  background-color: #297770;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.info .svg img {
+  /* width: 50%; */
+  margin-top: 30%;
+}
+
+.features .info-body {
+  box-shadow: 0px 0px 10px #2ca7ab40;
+  padding: 4% 0;
+  padding-left: 2%;
+  border-radius: 40px;
+  font-size: 13px;
+  color: #483318;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: -31%;
+}
+
+.featur-item .bg-img img {
+  position: relative;
+  width: 90%;
+  padding-right: 13%;
+}
+
+.featur-item .inner-text {
+  padding-right: 39%;
+}
+
+.features .info-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.phone-img {
+  position: absolute;
+  width: 100%;
+  bottom: 15%;
+  right: -11%;
+}
+/* 
+.featur-item {
+  width: 50%;
+} */
+
+/* *************** Almazeed section ************* */
+
+.almazeed-section, .almazeed-title a {
+  color: #483318;
+  /* text-decoration: none; */
+}
+
+.almazeed-title .icon {
+  padding: 0 2%;
+  color: #dfb82b;
+}
+
+.almazeed-title a:hover {
+  color: #483318;
+}
+
+.almazeed-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 27px;
+  padding-bottom: 5%;
+}
+
+.almazeed .sub-title {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 2% 0;
+}
+
+.almazeed .title-info {
+  font-size: 20px;
+}
+
+.almazeed {
+  padding-top: 1%;
+  padding-bottom: 4%;
+  text-align: center;
+  background-image: url(../Assets/back\ 5@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.almazeed .img img {
+  width: 72%;
+}
+
+.almazeed .download {
+  margin-top: -15%;
+}
+
+.almazeed .down-info {
+  width: 272px;
+  font-size: 20px;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  margin-right: auto;
+}
+
+.almazeed .download-nom {
+  padding-top: 1%;
+  font-size: 30px;
+  border-radius: 15px;
+  font-weight: 400;
+  margin-left: 3%;
+  margin-right: auto;
+  height: 68px;
+  width: 220px;
+  color: #fafafa;
+  background-color: #272727;
+}
+
+.almazeed .download-nom span {
+  padding: 1% 3%;
+  -moz-box-shadow: inset 0 0 18px #4e4e4e;
+  -webkit-box-shadow: inset 0 0 18px #4e4e4e;
+  box-shadow: inset 0 0 18px #4e4e4e;
+}
+
+/* *************** know more section **************** */
+
+.know-more-section {
+  position: relative;
+  padding-bottom: 5%;
+  background-color: #297770;
+  color: #ffffff;
+}
+
+.know-more-section .float-img {
+  position: absolute;
+  top: -15%;
+}
+
+.know-more-section .text {
+  font-weight: bold;
+}
+
+.know-more-row {
+  padding-top: 5%;
+}
+
+.know-more-row .heading {
+  font-size: 27px;
+  padding-left: 5rem;
+}
+
+.know-more-row .info {
+  padding-left: 5rem;
+  font-weight: 200;
+}
+
+.know-more-row .down-btn {
+  margin-top: 15%;
+}
+
+.know-more-row .down-btn button {
+  font-size: 17px;
+  background-color: #ffffff;
+  padding: 1% 4%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: #297770;
+  margin-left: 5%;
+}
+
+.know-more-row .down-btn .icon {
+  font-size: 26px;
+  padding-left: 1%;
+  vertical-align: middle;
+}
+
+/* ************** know prayer ***********8 */
+
+.know-prayer {
+  color: #483318;
+  padding-bottom: 5%;
+  text-align: center;
+  background-image: url(../Assets/back\ 1@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.know-prayer .title {
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+
+.know-prayer .azkar {
+  position: absolute;
+  top: -10%;
+  right: 5%;
+}
+
+.know-prayer .logo {
+  box-shadow: 0px 3px 6px #00000029;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: -5%;
+}
+
+.know-prayer .logo img {
+  width: 70%;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.know-prayer .info {
+  padding: 1% 8%;
+}
+
+.know-prayer .card {
+  box-shadow: 0px 0px 10px #2ca7ab3f;
+  border-radius: 2.25rem;
+}
+
+.know-prayer .social-icon {
+  padding-bottom: 4%;
+}
+
+.know-prayer .social-icon a {
+  padding: 1%;
+}
+
+.know-prayer .social-title {
+  font-weight: bold;
+  padding-bottom: 1%;
+}
+
+/* ************* other opinions *********** */
+
+.opinions {
+  padding-top: 5%;
+}
+
+.opinions .title {
+  font-size: 30px;
+  padding-right: 32%;
+  font-weight: 600;
+}
+
+.opinions .title img {
+  padding-right: 35%;
+}
+
+.opinions .stars-row {
+  margin-top: 5%;
+  padding: 2%;
+  border-radius: 25px;
+  background-color: #fafafa;
+}
+
+.opinions .stars-row button {
+  margin-left: -40%;
+  background: #1c91ff;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 1% 10%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 5%;
+  vertical-align: middle;
+}
+
+.opinions .reviews .google {
+  font-size: 20px;
+  padding: 1%;
+  font-weight: 700;
+  color: #483318;
+}
+
+.opinions .reviews .g-reviews {
+  font-size: 20px;
+  padding-right: 4%;
+  font-weight: bold;
+}
+
+.opinions .reviews .stars-nom {
+  padding-left: 4%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #483318;
+}
+
+.opinions .reviews .star {
+  font-size: 20px;
+  padding-left: 1%;
+  color: #f8d559;
+}
+
+.opinions .reviews .review-nom {
+  padding-right: 1%;
+  font-size: 13px;
+  color: #9e9e9e;
+}
+
+.opinions .cards-row {
+  margin-top: 5%;
+}
+
+.opinions .cards-row .star {
+  color: #f8d559;
+  padding-left: 1%;
+}
+
+.opinions .cards-row .info {
+  font-size: 14px;
+  color: #483318;
+}
+
+.opinions .cards-row .small {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+
+.opinions .cards-row .google-link a {
+  position: relative;
+  text-decoration: none;
+  font-size: 13px;
+  color: #1c91ff;
+}
+
+.opinions .cards-row .google-link a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #fafafa;
+  position: absolute;
+  transform: skewX(-10deg);
+  top: 230%;
+  right: -8%;
+}
+
+.opinions .cards-row .row-info {
+  background-color: #fafafa;
+  padding: 5% 9%;
+  border-radius: 20px;
+  /* width: 31%; */
+}
+
+.opinions .cards-row .customer-item {
+  padding-top: 11%;
+  padding-right: 7%;
+}
+
+.opinions .cards-row .customer-item .name-info {
+  padding: 1% 8%;
+}
+
+.opinions .cards-row .customer-item .name-info .name {
+  color: #483318;
+  font-weight: 600;
+  margin: 0%;
+}
+
+.opinions .cards-row .customer-item .date {
+  margin: 0;
+  font-size: 11px;
+  color: #8f8f8f;
+}
+
+.opinions .cards-row .customer-item .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.opinions .cards-row .customer-item img {
+  width: 100%;
+}
+
+.opinions .down-title {
+  padding-top: 5%;
+}
+
+/* ********** see-more section ******************* */
+
+.see-more-section .sub-title {
+  font-size: 30px;
+  text-align: center;
+  padding: 4%;
+  font-weight: 600;
+}
+
+.see-more-section {
+  background-image: url(../Assets/back\ 1@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.see-more-section .image img {
+  width: 100%;
+}
+
+.see-more-section .btn button {
+  margin: 13%;
+  background-color: #297770;
+  color: #ffffff;
+  border: none;
+  width: 250px;
+  padding: 2%;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.see-more-section .btn button:hover {
+  color: #dfb82b;
+}
+
+.accordion-card {
+  width: 60% !important;
+  border-radius: 15px;
+}
+
+.accordion-item {
+  margin: 1.7rem 0;
+  border: none;
+  border-radius: 0.9rem !important;
+  box-shadow: 0px 0px 10px #2ca7ab3f;
+}
+
+.accordion-header .accordion-button {
+  font-size: 1.2rem;
+  padding: 1.3rem 1.35rem;
+  color: #4a4a4a !important;
+  border-top-left-radius: 0.9rem !important;
+  border-top-right-radius: 0.9rem !important;
+  border-bottom-right-radius: 0.9rem !important;
+  border-bottom-left-radius: 0.9rem !important;
+}
+
+.accordion-header .accordion-button:not(.collapsed) {
+  background-color: #297770 !important;
+  color: #ffffff !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(6) sepia(1) grayscale(1);
+}
+
+.accordion-header button.collpased {
+  background-color: #fff !important;
+  color: #4a4a4a !important;
+  border-radius: 0.9rem !important;
+}
+
+.see-more-section .image {
+  padding-top: 5.2rem;
+}
+
+/* ******** footer styling *********** */
+
+footer {
+  color: #ffff;
+  position: relative;
+  padding-top: 8%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../Assets/Layer\ 2.png);
+}
+
+footer .logo {
+  text-align: center;
+}
+
+footer .logo p {
+  font-size: 13px;
+}
+
+footer .social {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+.social .social-icon {
+  font-size: 28px;
+  padding: 0 0.5%;
+}
+
+.social .social-icon a {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.social .social-icon a:hover {
+  color: #dfb82b;
+}
+
+footer .info {
+  width: 65%;
+  margin-right: 14%;
+  margin: auto;
+}
+
+footer .info .title {
+  font-size: 18px;
+}
+
+footer .info ul {
+  width: 120px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25%;
+  list-style: none;
+}
+
+footer .info ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .info ul a:hover {
+  color: #dfb82b;
+}
+
+footer .language {
+  margin-top: 70%;
+  margin-right: 100%;
+  width: 100%;
+  border: 1px solid #dfb82b;
+  border-radius: 15px;
+}
+
+footer .language img {
+  width: 17%;
+  margin-bottom: 3%;
+  margin-right: 5%;
+}
+
+footer .language select {
+  border: unset;
+  background-color: transparent;
+  outline: unset;
+  width: 70%;
+  color: #dfb82b;
+}
+
+footer .language select option {
+  background-color: transparent;
+  padding: 0;
+  margin: unset;
+}
+
+.mini-footer p {
+  color: #1c635d;
+  font-weight: 600;
+  font-size: 13px;
+  padding-top: 1%;
+}
+
+/* ============ desktop view ============ */
+
+/* tablet screen */
+
+@media screen and (max-width: 1024px) {
+  .opinions .title {
+    font-size: 1.5rem;
+    padding-right: 5%;
+    font-weight: 600;
+  }
+  .opinions .cards-row .google-link a::after {
+    top: 95%;
+  }
+  .accordion-header .accordion-button {
+    font-size: 1rem;
+    padding: 1rem 1.35rem;
+  }
+  .accordion-body {
+    padding: 1rem 1.25rem;
+    font-size: .9rem;
+  }
+  .accordion-card {
+    width: 53% !important;
+  }
+  /* footer */
+  footer .logo p {
+    font-size: .5rem;
+  }
+  .social .social-icon {
+    font-size: 1.2rem;
+  }
+  footer .info .title {
+    font-size: .6rem;
+  }
+  footer .info ul a {
+    font-size: .565rem;
+  }
+  footer .language {
+    margin-right: 12%;
+  }
+  footer .info {
+    width: 100%;
+    margin: auto;
+  }
+  footer .logo {
+    margin-top: 1rem;
+  }
+  .compass img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 11%;
+    left: 9%;
+  }
+  .kepla-info {
+    width: 45%;
+    font-size: .9rem;
+    padding-bottom: 5rem;
+  }
+  .kepla-dir {
+    font-size: 1rem;
+    margin-top: -4rem;
+    padding-right: 88%;
+  }
+  .features .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 19%;
+  }
+  .phone-img {
+    width: 81%;
+    bottom: 15%;
+    right: -6%;
+  }
+  .phone-img img {
+    width: 50%;
+  }
+  .almazeed .download-nom {
+    font-size: 1.5rem;
+    padding-block: .9%;
+    width: 17%;
+    height: unset;
+  }
+  .almazeed .download-nom span {
+    padding: 1% 2%;
+  }
+  .almazeed .down-info {
+    font-size: 1rem;
+    padding-top: 1%;
+  }
+}
+
+/* mobile screen */
+
+@media all and (max-width:767px) {
+  .navbar li.active::after {
+    display: none;
+  }
+  .home .main-title {
+    font-size: 2rem;
+  }
+  .home .sub-title {
+    font-size: 1.5rem;
+  }
+  .home .right {
+    float: right;
+    margin-left: 7rem;
+  }
+  .home .prayer-time {
+    padding-top: 2%;
+    padding-bottom: 0;
+  }
+  .titles {
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .grediant .praye-time {
+    font-size: 16px;
+  }
+  .grediant .praye-time-show {
+    padding: 0.2% 1%;
+  }
+  .grediant .active::after {
+    top: 8%;
+    left: 8%;
+  }
+  /* ************* table ************** */
+  .table-div {
+    padding-right: 10px;
+    overflow-x: hidden;
+  }
+  .calender-section .title {
+    font-size: 24px;
+    color: #483318;
+    text-align: center;
+    padding-top: 2%;
+    font-weight: 500;
+    padding-bottom: 1%;
+  }
+  .compass img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 6%;
+    left: 9%;
+  }
+}
+
+/* mobile screen mini */
+
+@media all and (max-width: 450px) {
+  .home .date p {
+    font-weight: bolder;
+    font-size: 12px;
+    color: #483318;
+    border: 2px solid #483318;
+    border-radius: 5px;
+    width: 140px;
+    padding: 0.4% 1%;
+  }
+  .grediant-media-query {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+  .grediant .praye-time-show {
+    margin: 2% 4%;
+  }
+  /* table */
+  .calender-section .calender .img {
+    width: 15%;
+  }
+  .table-div table thead th {
+    font-size: 1.2rem;
+    border: none;
+    padding-inline: 8px;
+  }
+  .table-div tbody th {
+    font-size: 1.3rem;
+  }
+  .table-div table td {
+    font-size: 1.2rem;
+  }
+  .table-div {
+    padding: 1.2rem 2rem;
+    padding-right: 0;
+  }
+  .compass img {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: 12%;
+    left: 7%;
+  }
+  .kepla-dir {
+    position: relative;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    padding-right: 53%;
+    margin-top: -1rem;
+  }
+  .degree {
+    position: absolute;
+    bottom: 5%;
+  }
+  .kepla-info {
+    height: 118px;
+    font-size: 0.65rem;
+    width: 100%;
+    margin-right: 0;
+  }
+  .compass img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 18%;
+    left: 7%;
+  }
+  .featur-item img, svg {
+    width: 35%;
+    vertical-align: middle;
+  }
+  .phone-img {
+    position: absolute;
+    width: 100%;
+    bottom: 8%;
+    right: 0%;
+  }
+  .featur-item .bg-img img {
+    margin-top: 2rem;
+  }
+  .info .lamp img {
+    width: 26%;
+  }
+  .almazeed-title {
+    font-size: 1.05rem;
+  }
+  .almazeed .sub-title {
+    font-size: 2rem;
+  }
+  .almazeed .title-info {
+    font-size: 1rem;
+  }
+  .almazeed .download-nom {
+    padding-top: 1.6%;
+    font-size: 0.9rem;
+    margin: auto;
+    margin-top: 4rem;
+    height: 35px;
+    width: 137px;
+  }
+  .almazeed .down-info {
+    font-size: 1rem;
+    padding-top: 2%;
+  }
+  .know-more-row .heading {
+    font-size: 1.6rem;
+    padding-left: 0;
+  }
+  .know-more-row .info {
+    padding-left: 0rem;
+    font-weight: 200;
+  }
+  .know-more-section .float-img {
+    top: -6%;
+  }
+  .know-more-section .float-img img {
+    width: 50%;
+  }
+  .know-more-row .down-btn {
+    margin-top: 9%;
+    margin-bottom: 6%;
+  }
+  /* accordion-card*/
+  .accordion-card {
+    width: 94% !important;
+    margin: auto;
+  }
+  .see-more-section .btn button {
+    margin: 13% auto;
+    width: 100%;
+    padding: .3rem 3rem;
+    font-size: 1rem;
+  }
+  .home .image img {
+    width: 95%;
+    height: 95%;
+  }
+  /* azkar */
+  .azkar img {
+    width: 64%;
+  }
+  .know-prayer .info {
+    font-size: 1rem;
+  }
+  .know-prayer .logo {
+    width: 100px;
+    height: 100px;
+    margin-top: -13%;
+  }
+  .know-prayer .azkar {
+    position: absolute;
+    top: -4%;
+  }
+  /* stars */
+  .opinions .title {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    padding-right: 0%;
+  }
+  .opinions .title img {
+    padding-right: 74%;
+    margin-top: -4rem;
+  }
+  .know-prayer .title {
+    font-size: 2rem;
+    padding-top: 8%;
+    padding-bottom: 19%;
+  }
+  .opinions .reviews .google {
+    font-size: 1rem;
+  }
+  .opinions .stars-row button {
+    margin-left: -36%;
+    font-size: 1.2rem;
+    padding: 1% 10%;
+    margin-top: 25%;
+  }
+  .opinions .reviews .stars-nom {
+    padding-left: 4%;
+    font-size: 1rem;
+  }
+  .opinions .reviews .star {
+    font-size: 1rem;
+  }
+  .opinions .cards-row .google-link a::after {
+    top: 150%;
+  }
+  .cards-row .row-item {
+    margin: 1.2rem 0;
+  }
+  .see-more-section .sub-title {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  /* footer */
+  .social .social-icon {
+    font-size: 1rem;
+    padding: 0 0.5%;
+  }
+  footer .language {
+    margin-top: 101%;
+    font-size: .5rem;
+  }
+  footer .info {
+    width: 99%;
+    margin-right: 0%;
+  }
+  footer .info .title {
+    font-size: 0.9rem;
+  }
+  footer .info ul a {
+    font-size: 0.6rem;
+  }
+  .mini-footer p {
+    font-size: .6rem;
+  }
+  .opinions .reviews .g-reviews {
+    font-size: .9rem;
+  }
+  .opinions .reviews .google {
+    font-size: .9rem;
+  }
+  .opinions .reviews .stars-nom {
+    font-size: .9rem;
+  }
+  .opinions .reviews .star {
+    font-size: .9rem;
+  }
+  .opinions .reviews .review-nom {
+    font-size: .6rem;
+  }
+  .opinions .stars-row button {
+    margin-left: -31%;
+    font-size: 1rem;
+  }
+  .opinions .title img {
+    padding-right: 68%;
+    margin-top: -2rem;
+  }
+  .opinions .title {
+    font-size: 1.2rem;
+    padding-right: 1%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+  .home {
+    background-image: unset;
+  }
+  .home .image img {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+@media all and (max-width: 620px) {
+  footer {
+    background-color: #297770;
+    background-image: unset !important;
+  }
+}
+
+/* .kepla-info {
+  width: 45%;
+  font-size: 0.9rem;
+  padding-bottom: 5rem;
+}
+.kepla-dir {
+  font-size: 1rem;
+  margin-top: -4rem;
+  padding-right: 89%;
+} */
+
+/* ============ desktop view .end// ============ */
+
+/* flexwrap */
+
+/* .flex-wrap{
+  flex-wrap: wrap;
+  // only in media query 
+  justify-content: center;
+   // for large screens
+  justify-content: space between;
+
+} */
